@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jalpai Ganesh Puja Committee</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f8fafc;color:#1e293b}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:#fff;text-align:center;padding:60px 20px;
+}
+.logo{
+  width:120px;height:120px;border-radius:50%;
+  border:4px solid gold;margin-bottom:15px;
+}
+header h1{font-size:34px;}
+header p{color:#fbbf24;margin-top:10px}
+
+/* NAV */
+nav{
+  position:sticky;top:0;background:#020617;
+  padding:12px;text-align:center;
+}
+nav a{
+  color:#fff;margin:0 12px;text-decoration:none;
+}
+nav a:hover{color:#fbbf24}
+
+/* SECTION */
+section{padding:70px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:20px}
+
+/* ABOUT */
+.about-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.card{
+  background:#fff;padding:25px;border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* PHOTO */
+.photo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:20px;
+}
+.photo-grid img{
+  width:100%;border-radius:15px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.gallery img{
+  width:100%;border-radius:10px;transition:0.3s;
+}
+.gallery img:hover{transform:scale(1.05)}
+
+/* INVITATION */
+.invite{position:relative;text-align:center;}
+.invite img{
+  max-width:100%;border-radius:20px;
+}
+.glass-btn{
+  position:absolute;top:10px;right:10px;
+  width:40px;height:40px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  background:rgba(255,255,255,0.2);
+  backdrop-filter:blur(8px);
+  color:#fff;text-decoration:none;
+  transition:0.3s;
+}
+.glass-btn:hover{transform:scale(1.2)}
+
+/* NEWS */
+.news{
+  background:#fff;padding:25px;border-radius:15px;text-align:center;
+}
+
+/* FACEBOOK */
+.contact{
+  background:linear-gradient(135deg,#1e293b,#020617);
+  color:#fff;border-radius:20px;padding:50px 20px;text-align:center;
+}
+
+/* MAP */
+.map-section iframe{
+  border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+  background:#020617;color:#fff;text-align:center;padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.jpg" class="logo">
+<h1>Jalpai Ganesh Puja Committee</h1>
+<p>“একতার শক্তিতে ভক্তির পরিবেশ”</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#activities">Activities</a>
+<a href="#photo">Photos</a>
+<a href="#gallery">Gallery</a>
+<a href="#invitation">Invitation</a>
+<a href="#news">News</a>
+<a href="#facebook">Facebook</a>
+<a href="#map">Location</a>
+</nav>
+
+<section id="about">
+<h2>About</h2>
+<div class="about-box">
+<div class="card">
+<h3>About Us</h3>
+<p>Jalpai Ganesh Puja Committee is dedicated to organizing Ganesh Puja with devotion, unity, and discipline.</p>
+</div>
+<div class="card">
+<h3>About Our Community</h3>
+<p>Our community in Jalpai, Bagnan, Howrah is known for unity, culture, and strong bonding.</p>
+</div>
+</div>
+</section>
+
+<section id="activities">
+<h2>Activities</h2>
+<div class="grid">
+<div class="card"><h3>Ganesh Puja</h3><p>Grand celebration with devotion.</p></div>
+<div class="card"><h3>Cultural Programs</h3><p>Platform for local talents.</p></div>
+<div class="card"><h3>Medical Camp</h3><p>Free health checkup with MBBS doctors.</p></div>
+<div class="card"><h3>Games</h3><p>Fun activities for all.</p></div>
+</div>
+</section>
+
+<section id="photo">
+<h2>Featured Moments</h2>
+<div class="photo-grid">
+<img src="images/photo1.jpg">
+<img src="images/photo2.jpg">
+<img src="images/photo3.jpg">
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<script>
+for(let i=1;i<=50;i++){
+document.write(`<img src="images/photo${i}.jpg">`);
+}
+</script>
+</div>
+</section>
+
+<section id="invitation">
+<h2>Invitation</h2>
+<div class="invite">
+<img src="invitation.jpg">
+<a href="invitation.jpg" download class="glass-btn">⬇</a>
+</div>
+</section>
+
+<section id="news">
+<h2>Latest News</h2>
+<div class="news">
+<h3>Ganesh Puja 2026</h3>
+<p>Organizing Date:</p>
+<h2>📅 14 September 2026</h2>
+<p>Stay connected with us via Facebook for every update.</p>
+</div>
+</section>
+
+<section id="facebook">
+<div class="contact">
+<h2>Connect With Us</h2>
+
+<p>
+Stay connected with <b>Jalpai Ganesh Puja Committee</b> for updates, photos, and events.<br>
+You can contact us directly via <b>Facebook Page DM</b>.
+</p>
+
+<div style="margin:25px 0;">
+<h3 style="color:#fbbf24;">⏳ Ganesh Puja Countdown</h3>
+<div id="timer" style="font-size:26px;margin-top:10px;"></div>
+</div>
+
+<div>
+<a href="https://www.facebook.com/profile.php?id=61556516343528" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 22px;background:#1877f2;color:#fff;border-radius:30px;text-decoration:none;">
+Facebook Page 1</a>
+
+<a href="https://www.facebook.com/share/1DV8XmhFYd/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 22px;background:#0f172a;color:#fff;border-radius:30px;text-decoration:none;">
+Facebook Page 2</a>
+</div>
+
+<p style="margin-top:20px;">
+For every moment and latest updates, stay connected with us via Facebook.
+</p>
+
+</div>
+</section>
+
+<section id="map" class="map-section" style="text-align:center;">
+<h2>Find Us on Google Maps</h2>
+
+<p style="margin-bottom:20px;">
+Visit our location and be part of the celebration.
+</p>
+
+<a href="https://maps.app.goo.gl/Xt3wXqTWcjqRepRj8" target="_blank"
+style="display:inline-block;padding:14px 28px;background:#f59e0b;color:#fff;border-radius:30px;text-decoration:none;">
+📍 Open in Google Maps
+</a>
+
+<div style="margin-top:30px;">
+<iframe src="https://maps.google.com/maps?q=Jalpai%20Ganesh%20Puja%20Committee&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300"></iframe>
+</div>
+</section>
+
+<footer>
+© 2026 Jalpai Ganesh Puja Committee • “একতার শক্তিতে ভক্তির পরিবেশ”
+</footer>
+
+<script>
+const pujaDate=new Date("September 14, 2026 00:00:00").getTime();
+
+setInterval(()=>{
+let now=new Date().getTime();
+let d=pujaDate-now;
+
+let days=Math.floor(d/(1000*60*60*24));
+let hours=Math.floor((d%(1000*60*60*24))/(1000*60*60));
+let minutes=Math.floor((d%(1000*60*60))/(1000*60));
+let seconds=Math.floor((d%(1000*60))/1000);
+
+document.getElementById("timer").innerHTML=
+days+"D "+hours+"H "+minutes+"M "+seconds+"S";
+
+},1000);
+</script>
+
+</body>
+</html>
